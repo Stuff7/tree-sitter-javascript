@@ -615,7 +615,7 @@ module.exports = grammar({
     // An entity can be named, numeric (decimal), or numeric (hexadecimal). The
     // longest entity name is 29 characters long, and the HTML spec says that
     // no more will ever be added.
-    html_character_reference: _ => /&(#([xX][0-9a-fA-F]{1,6}|[0-9]{1,5})|[A-Za-z]{1,30});/,
+    html_character_reference: _ => /&(#([xX][0-9a-fA-F]{1,6}|[0-9]{1,6})|[A-Za-z]{1,30});/,
 
     jsx_expression: $ => seq(
       '{',
